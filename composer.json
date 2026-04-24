@@ -1,0 +1,27 @@
+{
+    "name": "nicol/trace",
+    "description": "Trace logs across requests",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "authors": [
+        {
+            "name": "Nicolo Sacchi",
+            "email": "nicolo.sacchi@gmail.com"
+        }
+    ],
+    "require": {
+        "league/container": "^2.5",
+        "google/cloud-trace": "^0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}

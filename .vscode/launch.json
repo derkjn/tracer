@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for Xdebug (Docker PHP 5.6)",
+      "type": "php",
+      "request": "launch",
+      "port": 9000,
+      "pathMappings": {
+        "/var/www/html": "${workspaceFolder}",
+        "/var/www/html/src": "${workspaceFolder}/src"
+      },
+      "xdebugSettings": {
+        "max_children": 256,
+        "max_data": 1024,
+        "max_depth": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+services:
+  php:
+    build:
+      context: ./build
+      target: dev
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      XDEBUG_CONFIG: "idekey=VSCODE"
